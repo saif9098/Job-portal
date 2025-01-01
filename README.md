@@ -1,6 +1,6 @@
-# JobConnect: MERN Stack Job Portal Web Application
+# Career-jump: MERN Stack Job Portal Web Application
 
-**JobConnect** is a modern job portal application designed to bridge the gap between job seekers and companies. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), JobConnect provides an intuitive platform for companies to manage job postings and for users to find and apply for jobs based on their skills and interests.
+**Career-jump** is a modern job portal application designed to bridge the gap between job seekers and companies. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), JobConnect provides an intuitive platform for companies to manage job postings and for users to find and apply for jobs based on their skills and interests.
 
 ---
 
