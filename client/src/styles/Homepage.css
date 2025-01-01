@@ -1,0 +1,213 @@
+
+
+
+.poster{
+  width: 100%;
+  height: 75vh;
+  background-image: url('../../public/assets/images/headerimg.jpg'); /* Adjust the path based on your file structure */
+  background-size: cover; /* Adjusts the background size */
+  background-repeat: no-repeat;
+}
+#moving-div {
+  /* background-color: red; */
+  
+  position: absolute;
+  background: #fff;
+  white-space: nowrap;
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 96px;
+
+}
+.companies{
+  height: 100%;
+  width: 220px;
+  background: #fff;
+  overflow: hidden;               /* Hide overflow content */
+  white-space: normal;            /* Allow text to wrap within the width */
+  word-wrap: break-word;          /* Break long words to fit inside the container */
+  text-overflow: ellipsis; 
+  position: absolute;
+  font-size: large;
+  font-weight: 700;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+#moving-div .move {
+  display: inline-block;
+  animation-name: mobe;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#moving-div .move img {
+  height: 90px;
+  width: 200px;
+  
+  margin-right: 120px;
+}
+
+@keyframes mobe {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+
+}
+
+
+
+.jobsection{
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #f2f3f7;
+}
+::-webkit-scrollbar{
+  width: 6px;
+  height: 20px;
+}
+::-webkit-scrollbar-thumb{
+  background: #afbabe;
+  border-radius: 10px;
+  height: 20px;
+}
+.jobhead{
+  padding: 7px;
+ display: flex;
+ 
+  border-bottom: 2px solid rgb(182, 181, 181);
+  font-size: 26px;
+  font-weight: bold;
+}
+.jobsbox{
+  width: 33%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.jobslist{
+  overflow: auto;
+  width: 100%;
+ 
+}
+.jobdetail{
+    width: 67%;
+    height: 100vh;
+    overflow: auto;
+    border: 1px solid #d7dadd;
+    
+    top: 10px;
+   
+}
+#box{
+  background-color: #fff;
+}
+.fontset{
+  font-size: 11px;
+  padding: 0% 3px;
+
+  background: #eef3f5;
+}
+.infofontset{
+  font-size: 16px;
+  padding: 0% 6px;
+  border-radius: 3px;
+
+  background: #f0f3f5;
+}
+.fontsmall{
+  font-size: 13px;
+
+  margin: 0%;
+}
+#confirmbox{
+  position: fixed;
+  background:white;
+  width: 40vw;
+  height: 133px;
+  z-index: 24;
+  top: 3px;
+  padding: 10px;
+  border: 3px solid rgb(46, 115, 245);
+  border-radius: 12px;
+color: #33305f;
+
+}
+.footer{
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerleft{
+  position: relative;
+  width: 45%;
+  height: 100%;
+  background-image: url('../components/Logo/footerbg.png'); /* Adjust the path based on your file structure */
+  background-size: cover; /* Adjusts the background size */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.footerRight{
+  background: #030e38;
+  width: 55%;
+  height: 100%;
+  overflow: hidden;
+}
+.more h6{
+  color: #979c9c;
+}
+.more h6:hover{
+  color: #eaeeee;
+}
+.ftrtxt{
+  padding-top:25px ;
+  color: #a3a7a8;
+}
+.ftrcontact{
+  border-top: 2px dashed rgb(100, 95, 95);
+  padding: 5px;
+  color: #979c9c;
+
+}
+.copyright{
+  position: absolute;
+  z-index: 22;
+  background: #00000085;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px;
+  font-weight: bold;
+  color: white;
+}
+@media (max-width:800px) {
+  .jobsbox{
+    width: 100%;
+    height: 75vh;
+  }
+  .jobdetail{
+      width: 100%;
+      height: 80vh;
+     
+  }
+  .footerleft{
+    width: 100%;
+
+  }
+  .footerRight{
+    display: none;
+  }
+}
